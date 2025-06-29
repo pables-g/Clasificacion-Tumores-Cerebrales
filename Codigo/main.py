@@ -22,4 +22,5 @@ if __name__ == "__main__":
     cnn.load_network('braintumor3.keras')
     cnn.architecture_network()
     cnn.confusion_matrix(X_train,y_train)
+    cnn.calculate_multiclass_auc(X_test, y_test)
     cnn.test_network(X_test,y_test)
