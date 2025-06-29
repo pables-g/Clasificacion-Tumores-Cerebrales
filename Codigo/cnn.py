@@ -66,7 +66,6 @@ class CNN:
         y_pred = np.argmax(self.model.predict(X_train), axis=1)
         cm = confusion_matrix(y_true, y_pred)
         
-        plt.figure(figsize=(20, 25))
         disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=['glioma','no_tumor', 'meningioma','pituary_tumor'])
         disp.plot(cmap=plt.cm.Blues, values_format='d')
     
