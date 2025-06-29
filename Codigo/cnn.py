@@ -2,7 +2,7 @@ import tensorflow as tf
 from time import perf_counter
 import matplotlib.pyplot as plt
 import numpy as np
-from sklearn.metrics import classification_report,confusion_matrix, ConfusionMatrixDisplay
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay, roc_auc_score, classification_report
 
 class CNN:
     def __init__(self, input_shape, feature_map, num_classes):
@@ -12,30 +12,6 @@ class CNN:
         self.model = tf.keras.models.Sequential()
 
     def create_network(self) -> None:
-        """
-        self.model.add(tf.keras.layers.Input(shape=(256, 256, 3)))
-
-        self.model.add(tf.keras.layers.Conv2D(32, kernel_size=(5,5), activation='relu', padding='same'))
-        self.model.add(tf.keras.layers.MaxPooling2D())
-        self.model.add(tf.keras.layers.Dropout(0.15))
-
-        self.model.add(tf.keras.layers.Conv2D(32, kernel_size=(5,5), activation='relu', padding='same'))
-        self.model.add(tf.keras.layers.MaxPooling2D())
-        self.model.add(tf.keras.layers.Dropout(0.15))
-
-        self.model.add(tf.keras.layers.Conv2D(32, kernel_size=(3,3), activation='relu', padding='same'))
-        self.model.add(tf.keras.layers.MaxPooling2D())
-        self.model.add(tf.keras.layers.Dropout(0.15))
-
-        self.model.add(tf.keras.layers.Conv2D(64, kernel_size=(2,2), activation='relu', padding='same'))
-        self.model.add(tf.keras.layers.MaxPooling2D())
-        self.model.add(tf.keras.layers.Dropout(0.15))
-            
-        self.model.add(tf.keras.layers.Flatten())
-        self.model.add(tf.keras.layers.Dense(128, activation='relu'))
-        self.model.add(tf.keras.layers.Dropout(0.45))
-        self.model.add(tf.keras.layers.Dense(4, activation='softmax'))
-        """
         self.model.add(tf.keras.layers.Input(shape = (self.input_shape, self.input_shape, 3)))
         self.model.add(tf.keras.layers.Conv2D(32,kernel_size = (5,5), activation='relu', padding = 'same'))
         self.model.add(tf.keras.layers.BatchNormalization())
@@ -99,9 +75,14 @@ class CNN:
         plt.tight_layout() 
         plt.show()
 
+    def calculate_multiclass_auc(self, X_test, y_test):
+        y_scores = self.model.predict(X_test)
+        micro_roc_AUC = roc_auc_score(y_test, y_scores, multi_class="ovr", average="micro")
+        print(f"AUC: {round(micro_roc_AUC,2)}")
+
     def test_network(self, X_test : list, y_test : list) -> None:
         scores = self.model.evaluate(X_test, y_test)
-        print(f"Loss: {round(scores[0],4)}, Accuracy: {round(scores[1],4)}, AUC: {round(scores[2],4)}")
+        print(f"Loss: {round(scores[0],2)}, Accuracy: {round(scores[1],2)}")
         y_true_test = np.argmax(y_test, axis=1)
         y_pred_test = np.argmax(self.model.predict(X_test), axis=1) 
         print(classification_report(y_true_test,y_pred_test))
