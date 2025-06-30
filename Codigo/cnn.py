@@ -30,7 +30,7 @@ class CNN:
         self.model.add(tf.keras.layers.Dense(self.num_classes,activation='softmax'))
 
     def compile_network(self) -> None:
-        self.model.compile(optimizer = 'adam', loss = 'categorical_crossentropy', metrics = ['accuracy','precision','auc'])
+        self.model.compile(optimizer = 'adam', loss = 'categorical_crossentropy', metrics = ['accuracy','precision'])
 
     def train_network(self, X_train : list, y_train : list, epochs : int, batch_size : int) -> None:
         start_time = perf_counter()
