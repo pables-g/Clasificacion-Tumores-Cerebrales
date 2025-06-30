@@ -31,7 +31,7 @@ Este repositorio contiene la implementación en Python de una red neuronal convo
    - Matplotlib
    - Tensorflow
 
-## 🏗️ Estructura del proyecto
+## 🏗️ **Estructura del proyecto**
 
 brain-tumor-classification/
 ├── data_loader.py    # Carga y preprocesamiento de datos
