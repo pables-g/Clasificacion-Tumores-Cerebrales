@@ -8,18 +8,27 @@ Este repositorio contiene la implementación en Python de una red neuronal convo
 ## 🛠️ Características principales
 
 - Clasificación en 4 categorías: Glioma, Meningioma, Tumor pituitario y Sin tumor
-- Arquitectura CNN personalizable con:
+- Arquitectura CNN (personalizable) con:
   - Capas convolucionales y de pooling
   - Batch Normalization
   - Dropout para regularización
-- Evaluación con métricas completas:
-  - Accuracy, Precision, Recall
+- Evaluación con métricas:
+  - Accuracy, Precision, Recall, F1-score
   - Matriz de confusión
-  - Curva ROC y AUC
+  - Curva ROC (micro-averaged OvR) para calcular AUC AUC
 
 ## 📦 Requisitos
 
 - Python 3.8+
-- Dependencias:
-  ```bash
-  pip install tensorflow opencv-python numpy scikit-learn matplotlib kagglehub tqdm
+- Librerias utilizadas:
+ - Kagglehub
+ - Os
+ - Cv2
+ - Numpy
+ - Tqdm
+ - Sklearn
+ - Time
+ - Matplotlib
+ - Tensorflow
+
+## 
