@@ -54,16 +54,10 @@ pip install -r requirements.txt
 ## ⚙️ Cómo ejecutar
 
 1. Coloca las imágenes en las carpetas adecuadas (`train` y `test`) siguiendo la estructura esperada por `data_loader.py`.
-2. Ejecuta el entrenamiento con:
+2. Ejecuta el flujo (básico) con:
 
 ```bash
-python train.py
-```
-
-3. Evalúa el modelo con:
-
-```bash
-python evaluate.py
+python main.py
 ```
 
 ## 📈 Resultados
@@ -79,7 +73,3 @@ Este trabajo se basa en el TFG disponible en PDF: [TFG_PABLO_GARCIA_HERNANDEZ.pd
 **Pablo García Hernández**  
 Grado en Matemáticas  
 Universidad Complutense de Madrid
-
-## 📄 Licencia
-
-Este proyecto se distribuye bajo licencia académica con fines educativos y de investigación.
