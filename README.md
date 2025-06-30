@@ -44,12 +44,6 @@ El modelo se entrena utilizando conjuntos de datos públicos (base de datos disp
 - tqdm
 - matplotlib
 
-Puedes instalar las dependencias ejecutando:
-
-```bash
-pip install -r requirements.txt
-```
-
 ## ⚙️ Cómo ejecutar
 
 1. Coloca las imágenes en las carpetas adecuadas (`train` y `test`) siguiendo la estructura esperada por `data_loader.py`.
