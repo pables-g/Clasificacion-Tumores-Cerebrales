@@ -55,7 +55,18 @@ python main.py
 
 ## 📈 Resultados
 
-El modelo alcanzó una **precisión superior al 90%** en el conjunto de prueba. Los resultados demuestran la capacidad de las CNNs para detectar patrones complejos en imágenes médicas, mostrando su potencial como herramienta de apoyo al diagnóstico clínico.
+| Clase       | Precision | Recall    | F1-score  | Support   |
+|-------------|-----------|-----------|-----------|-----------|
+| Glioma      | 0.87      | 0.91      | 0.89      | 93        |
+| No tumor    | 0.92      | 0.92      | 0.92      | 51        |
+| Meningioma  | 0.92      | 0.88      | 0.90      | 96        |
+| Pituitario  | 0.99      | 0.99      | 0.99      | 87        |
+
+| Métricas    | Valor     |
+|-------------|-----------|
+| Func. coste | 0.36      |
+| Accuracy    | 0.92      |
+| AUC         | 0.99      |
 
 ## 👨‍🎓 Autor
 
