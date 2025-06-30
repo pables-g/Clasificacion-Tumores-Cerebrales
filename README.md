@@ -2,7 +2,6 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)](https://www.tensorflow.org/)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
 Este repositorio contiene la implementación en Python de una red neuronal convolucional (CNN) para la clasificación de tumores cerebrales a partir de imágenes de resonancia magnética (IRM). Desarrollado como Trabajo de Fin de Grado (TFG) en Matemáticas.
 
