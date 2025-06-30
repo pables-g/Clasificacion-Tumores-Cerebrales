@@ -27,7 +27,7 @@ El modelo se entrena utilizando conjuntos de datos públicos (base de datos disp
 ```
 .
 ├── README.md            # Este archivo
-├── CODIGO
+└── CODIGO
     ├── data_loader.py   # Funciones para carga, preprocesamiento y división del dataset
     ├── cnn.py           # Definición de la red neuronal CNN
     └── main.py          # Scrip principal en el que se usan las clases Data y CNN
