@@ -11,7 +11,7 @@ El proyecto tiene como objetivo implementar y entrenar una red neuronal convoluc
 - Tumor pituitario
 - Sin tumor
 
-El modelo se entrena utilizando conjuntos de datos públicos (base de datos disponible en Kaggle) y se evalúa mediante distintas métricas de clasificación. Se emplean técnicas modernas de Deep Learning y se aplica regularización para evitar sobreajuste.
+El modelo se entrena utilizando conjuntos de datos públicos ([base de datos disponible en Kaggle]( https://www.kaggle.com/datasets/sartajbhuvaji/brain-tumor-classification-mri)) y se evalúa mediante distintas métricas de clasificación. Se emplean técnicas modernas de Deep Learning y se aplica regularización para evitar sobreajuste.
 
 ## 🧠 Arquitectura del modelo
 
