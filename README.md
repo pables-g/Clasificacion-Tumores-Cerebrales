@@ -6,7 +6,7 @@
 
 Este repositorio contiene la implementación en Python de una red neuronal convolucional (CNN) para la clasificación de tumores cerebrales a partir de imágenes de resonancia magnética (IRM). Desarrollado como Trabajo de Fin de Grado (TFG) en Matemáticas.
 
-## � Características principales
+## 🛠️ Características principales
 
 - Clasificación en 4 categorías: Glioma, Meningioma, Tumor pituitario y Sin tumor
 - Arquitectura CNN personalizable con:
