@@ -1,6 +1,6 @@
 # Clasificación de Tumores Cerebrales con Redes Neuronales Convolucionales (CNN)
 
-Este repositorio contiene el código fuente desarrollado en Python para el Trabajo de Fin de Grado en Matemáticas: **"Clasificación de tumores mediante el uso de redes neuronales"**, defendido en la Universidad Complutense de Madrid durante el curso académico 2024–2025.
+Este repositorio contiene el código fuente desarrollado en Python para el Trabajo de Fin de Grado en Matemáticas: **"Clasificación de tumores mediante el uso de redes neuronales"**, en la Universidad Complutense de Madrid durante el curso académico 2024–2025.
 
 ## 📄 Descripción del Proyecto
 
