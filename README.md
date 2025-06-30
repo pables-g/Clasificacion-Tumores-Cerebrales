@@ -46,7 +46,7 @@ El modelo se entrena utilizando conjuntos de datos públicos ([base de datos dis
 
 ## ⚙️ Cómo ejecutar
 
-1. Coloca las imágenes en las carpetas adecuadas (`train` y `test`) siguiendo la estructura esperada por `data_loader.py`.
+1. Coloca las imágenes en las carpetas adecuadas (`Training` y `Testing`) siguiendo la estructura esperada por `data_loader.py`.
 2. Ejecuta el flujo (básico) con:
 
 ```bash
@@ -56,10 +56,6 @@ python main.py
 ## 📈 Resultados
 
 El modelo alcanzó una **precisión superior al 90%** en el conjunto de prueba. Los resultados demuestran la capacidad de las CNNs para detectar patrones complejos en imágenes médicas, mostrando su potencial como herramienta de apoyo al diagnóstico clínico.
-
-## 📚 Referencias
-
-Este trabajo se basa en el TFG disponible en PDF: [TFG_PABLO_GARCIA_HERNANDEZ.pdf](./TFG_PABLO_GARCIA_HERNANDEZ.pdf)
 
 ## 👨‍🎓 Autor
 
