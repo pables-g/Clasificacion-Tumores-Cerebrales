@@ -21,14 +21,14 @@ Este repositorio contiene la implementación en Python de una red neuronal convo
 
 - Python 3.8+
 - Librerias utilizadas:
- - Kagglehub
- - Os
- - Cv2
- - Numpy
- - Tqdm
- - Sklearn
- - Time
- - Matplotlib
- - Tensorflow
+   - Kagglehub
+   - Os
+   - Cv2
+   - Numpy
+   - Tqdm
+   - Sklearn
+   - Time
+   - Matplotlib
+   - Tensorflow
 
 ## 
