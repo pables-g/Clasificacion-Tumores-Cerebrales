@@ -60,25 +60,25 @@ class Data:
 
         return X_train,X_test,y_train,y_test
     
-    def plot(self, X_train : list, y_train : list) -> None:
-        label_counts = {label: np.sum(y_train == label) for label in self.labels}
+    def plot(self, X: list, y: list) -> None:
+        label_counts = {label: np.sum(y == label) for label in self.labels}
         plt.figure(figsize=(8, 6))
-        colors = ["C0", "C1", "C2", "C3"] 
+        colors = ["C0", "C1", "C2", "C3"]
         plt.subplot(2, 1, 1)
         plt.bar(label_counts.keys(), label_counts.values(), color=colors)
-        plt.xlabel('Labels')
         plt.ylabel('Count')
         plt.title('Distribution of Labels')
         k = 0
         for i in self.labels:
             j = 0
             while True:
-                if y_train[j] == i:
-                    plt.subplot(2, 4, k + 5)
-                    plt.imshow(X_train[j])
+                if y[j] == i:
+                    plt.subplot(2, 4, k + 5) 
+                    plt.imshow(X[j])
                     plt.axis('off')
                     k += 1
                     break
                 j += 1
+                
         plt.tight_layout()
         plt.show()
