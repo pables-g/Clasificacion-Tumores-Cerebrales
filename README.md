@@ -35,8 +35,8 @@ El modelo se entrena utilizando conjuntos de datos públicos ([base de datos dis
 
 ## 🛠️ Requisitos
 
-- Python ≥ 3.7
-- TensorFlow ≥ 2.0
+- Python
+- TensorFlow
 - NumPy
 - Pandas
 - scikit-learn
