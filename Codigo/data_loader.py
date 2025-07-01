@@ -39,11 +39,11 @@ class Data:
                 img = cv2.resize(img,(self.image_size,self.image_size))
                 X_train.append(img)
                 y_train.append(i)
-
         X_train, y_train = np.array(X_train), np.array(y_train) # Convertir a numpy arrays
         X_train,y_train = shuffle(X_train,y_train,random_state=101) # Mezclar los datos
         X_train,X_test,y_train,y_test = train_test_split(X_train,y_train,test_size=0.1,random_state=101) # Dividir los datos
 
+        #Para utilizar la funcion plot, comentar con """ desde aqui
         y_train_new = []
         for i in y_train:
             y_train_new.append(self.labels.index(i))
@@ -54,9 +54,8 @@ class Data:
             y_test_new.append(self.labels.index(i))
             y_test = y_test_new
             y_test = tf.keras.utils.to_categorical(y_test)
-
-        # Normalizacion de los datos
         X_train, X_test = X_train / 255.0, X_test / 255.0
+        #Para utilizar la funcion plot, comentar con """ hasta aquí
 
         return X_train,X_test,y_train,y_test
     
